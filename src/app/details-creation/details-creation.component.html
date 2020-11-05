@@ -1,0 +1,32 @@
+<html>
+
+<head>
+</head>
+
+<body>
+<div>
+<p>Enter the details of the </p>
+</div>
+
+    <form action="" class="form">
+        <div class="form-group">
+            <label for="">Name</label>
+            <input [(ngModel)]='bannerDetailsData.name' name="name" type="text" class="form-control rounded-0" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="">Description</label>
+            <input [(ngModel)]='bannerDetailsData.description' name="description" type="text" class="form-control rounded-0" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="">Uniform Resource Locator</label>
+            <input [(ngModel)]='bannerDetailsData.url' name="url" type="text" class="form-control rounded-0" required>
+        </div>
+        <br>
+        <button (click)="registerBannerData()" type="button" class="btn btn-primary float-right">Register</button>    
+    </form>
+
+</body>
+
+</html>

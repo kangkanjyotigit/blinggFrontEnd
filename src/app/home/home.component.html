@@ -1,0 +1,36 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div>
+    <b><strong><p style="position:relative;">The list of the banners retrieved:</p></strong></b>
+
+    <div id="flex-display">
+        <div *ngFor="let item of bannerDetails;let i = index">
+            <div class="box">
+                <div>
+                    <img width="100px" breath="80px" src="{{item.url}}">
+                </div>
+
+                <div>
+                    {{item.name}}
+                </div>
+
+                <button (click)="goToDetails(i)">See Details</button>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <b><p>Wanna create your own banner?</p></b>
+        <button (click)="goToDetailsCreation()">Click here</button>
+    </div>    
+</body>
+
+</html>

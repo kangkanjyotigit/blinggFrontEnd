@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "root": "",
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "blinggFrontEnd"
+    }
+  },
+  "defaultProject": "blinggFrontEnd",
+  "cli": {
+    "analytics": false
+  }
 }

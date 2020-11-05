@@ -1,0 +1,12 @@
+#flex-display {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: '33.33%';
+    height: 250px;
+    padding: 50px;
+    box-sizing: border-box;
+  }
