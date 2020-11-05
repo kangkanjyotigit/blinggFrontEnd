@@ -5,22 +5,22 @@
 
 <body>
 <div>
-<p>Enter the details of the </p>
+<strong><p>Enter the details of the Banner</p></strong>
 </div>
 
-    <form action="" class="form">
+    <form style="display:flex; text-align: center" action="" class="form">
         <div class="form-group">
-            <label for="">Name</label>
-            <input [(ngModel)]='bannerDetailsData.name' name="name" type="text" class="form-control rounded-0" required>
+            <label for=""><b>Name</b>></label>
+            <input  [(ngModel)]='bannerDetailsData.name' name="name" type="text" class="form-control rounded-0"  required>
         </div>
         <br>
         <div class="form-group">
-            <label for="">Description</label>
+            <label for=""><b>Description</b></label>
             <input [(ngModel)]='bannerDetailsData.description' name="description" type="text" class="form-control rounded-0" required>
         </div>
         <br>
         <div class="form-group">
-            <label for="">Uniform Resource Locator</label>
+            <label for=""><b>Uniform Resource Locator</b></label>
             <input [(ngModel)]='bannerDetailsData.url' name="url" type="text" class="form-control rounded-0" required>
         </div>
         <br>
