@@ -46,7 +46,7 @@ export class BlinggServiceService implements HttpInterceptor{
   
   sendDataDatabase(data){
     console.log('printing from service'+ data.name);
-    return this.http.post('http://localhost:4000/DataPost',data);
+    return this.http.post<any>('http://localhost:4000/DataPost',data);
   }
   
 
